@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <style>
+    .dropdown-menu{
+    box-shadow: 2px 2px gray;
+    text-align: center;
+}
+
+.ab{
+    margin-right: 20px;
+}
+
+.navbar-brand{
+    margin-left: 25px;
+    font-size: 19px;
+}
+
+.abb{
+    margin-right: 15px;
+}
+
+  </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"><b style="font-size: x-large;">AUTOMATIC QUESTION GENERATOR</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active abb">
+              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{url_for('static', filename= 'img999.jpg')}}" class="d-block w-100 h-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename= 'img33.png')}}" class="d-block w-100 h-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename= 'img66.png')}}" class="d-block w-100 h-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename= 'img77.jpg')}}" class="d-block w-100 h-100 " alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+              <br>
+                <img style="max-width: 100%; height: 325px;" src="{{url_for('static', filename= 'img22.png')}}" alt="">
+            </div>
+            <div class="col-sm-6">
+              <br>
+              <div class="card">
+                <h4 style="color: white; text-align: center;" class="card-header bg-primary">Question Generator</h4>
+                <div class="card-body">
+                  <form name="myform" action='./index.html' method='POST'>
+                    <div class="form-row">
+                      <div class="form-group col-sm-6">
+                        <label for="fname">Input Text</label>
+                        <textarea id="input_text" name="message" rows="3" cols="75" placeholder="Enter your text here"></textarea>
+                        <label for="fffname">Number of questions to be generated</label>
+                        <input style="height: 30px; width: 50px;" type="text" class="form-control" id="zname" name="message2">
+                        <button style="margin-left: 250px;" type="submit" class="btn btn-primary">Generate</button>
+                      </div>
+                    </div>
+                </form>
+            </div>    
+        </div>
+        </div>
+        </div>
+        </div> <br>
+        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-6">
+              <!-- Button trigger modal -->
+              <div class="card bg-primary ggg" style="padding-bottom: 40px; margin-bottom: 20px; padding-top: 40px;box-shadow: 5px 5px 10px; cursor: pointer;" data-toggle="modal" data-target="#exampleModalLong">
+                <div class="card-body">
+                  <h4 style="color: white; text-align: center;" class="card-title">MCQ</h4>
+                </div>
+              </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header bg-primary">
+      <h3 class="modal-title" style="color: white;" id="exampleModalLongTitle">MCQ</h3>
+      <button type="button" style="color: white;" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <br>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+            </div>
+          <div class="col-sm-3 col-6">
+            <!-- Button trigger modal -->
+            <div class="card ggg" style="padding-bottom: 40px; background-color: #0BDA51; padding-top: 40px;box-shadow: 5px 5px 10px; cursor: pointer;" data-toggle="modal" data-target="#exampleModalLong2">
+              <div class="card-body">
+                <h4 style="color: white; text-align: center;" class="card-title">Crossword</h4>
+              </div>
+            </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header" style="background-color: #0BDA51;">
+<h3 class="modal-title" style="color: white;" id="exampleModalLongTitle">Crossword</h3>
+<button type="button" style="color: white;" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<br>
+
+
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+          </div>
+          <div class="col-sm-3 col-6">
+            <!-- Button trigger modal -->
+            <div class="card bg-warning ggg" style="padding-bottom: 40px; padding-top: 40px;box-shadow: 5px 5px 10px; cursor: pointer;" data-toggle="modal" data-target="#exampleModalLong3">
+              <div class="card-body">
+                <h4 style="color: white; text-align: center;" class="card-title">Wh-Questions</h4>
+              </div>
+            </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header bg-warning">
+<h3 class="modal-title" style="color: white;" id="exampleModalLongTitle">Wh-Questions</h3>
+<button type="button" style="color: white;" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+
+<br>
+
+
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+          </div>
+          <div class="col-sm-3 col-6">
+            <!-- Button trigger modal -->
+            <div class="card ggg" style="padding-bottom: 40px; background-color: #E0115F; padding-top: 40px;box-shadow: 5px 5px 10px; cursor: pointer;" data-toggle="modal" data-target="#exampleModalLong4">
+              <div class="card-body">
+                <h4 style="color: white; text-align: center;" class="card-title">Summary</h4>
+              </div>
+            </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header" style="background-color: #E0115F;">
+<h3 class="modal-title" style="color: white;" id="exampleModalLongTitle">Summary</h3>
+<button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+
+<br>
+
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+          </div>
+          </div>
+        </div>
+
+
+
+</body>
