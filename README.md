@@ -16,6 +16,9 @@ You can view the full research paper detailing the methodology, system architect
 
 [View Research Paper]([https://link-to-your-paper.com](https://link.springer.com/chapter/10.1007/978-981-99-0550-8_19))
 
+## Model Architecture
+![1](https://github.com/user-attachments/assets/71a9870f-b5e4-474a-9b19-46fd36b70494)
+
 ## Question Generation
 
 ### MCQ Generation
@@ -37,9 +40,11 @@ Wh-questions are created by analyzing sentence structure and identifying relevan
 ### Summary Generation
 The summary generation is accomplished using a transformer model (T5), which condenses the text into a brief version, making it easier to extract relevant information for question generation.
 
-## Model Architecture
+## ScreenShots
 
+![2](https://github.com/user-attachments/assets/e42d8745-ea9c-4f04-a9a4-ee7bd9e8edc5)
 
+![3](https://github.com/user-attachments/assets/fe36f9d3-edbf-4535-a662-e6b98c61dcbb)
 
 ### Technologies Used
 
