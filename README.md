@@ -14,7 +14,7 @@ A server-side application that generates multiple types of questions, such as MC
 
 You can view the full research paper detailing the methodology, system architecture, and experiments conducted in this project by clicking the link below:
 
-[View Research Paper]([https://link-to-your-paper.com](https://link.springer.com/chapter/10.1007/978-981-99-0550-8_19))
+[View Research Paper]([https://link-to-your-paper.com](https://link.springer.com/chapter/10.1007/978-981-99-0550-8_19)
 
 ## Model Architecture
 ![1](https://github.com/user-attachments/assets/71a9870f-b5e4-474a-9b19-46fd36b70494)
