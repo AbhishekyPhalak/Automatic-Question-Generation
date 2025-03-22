@@ -9,13 +9,12 @@ A server-side application that generates multiple types of questions, such as MC
 - **Wh-Question Generation**: Automatically generates questions using "Who," "What," "Where," etc.
 - **Crossword Generation**: Converts important answers in the text into crossword-style puzzles.
 - **Text Summarization**: Summarizes long texts into short versions.
-- **Named Entity Recognition**: Identifies named entities (like persons or locations) to generate specific questions.
 
 ## Research Paper
 
 You can view the full research paper detailing the methodology, system architecture, and experiments conducted in this project by clicking the link below:
 
-[View Research Paper](https://link-to-your-paper.com)
+[View Research Paper]([https://link-to-your-paper.com](https://link.springer.com/chapter/10.1007/978-981-99-0550-8_19))
 
 ## Question Generation
 
@@ -39,6 +38,7 @@ Wh-questions are created by analyzing sentence structure and identifying relevan
 The summary generation is accomplished using a transformer model (T5), which condenses the text into a brief version, making it easier to extract relevant information for question generation.
 
 ## Model Architecture
+
 
 
 ### Technologies Used
